@@ -1,0 +1,6 @@
+text_1 = input()
+text_2 = input()
+text_3 = input()
+print (text_3)
+print (text_2)
+print (text_1)
