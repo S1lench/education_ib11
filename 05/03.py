@@ -7,5 +7,4 @@ while True:
         break
     if 'кот' in line:
         found_cat_line = line_number
-
 print(found_cat_line)
