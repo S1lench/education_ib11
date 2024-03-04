@@ -1,24 +1,23 @@
-list1 = set()
+print("Введите номера домов с первого листка (для завершения введите пустую строку):")
+numbers1 = set()
 while True:
-    num = input()
-    if num:
-        list1.add(num)
-    else:
+    number = input().strip()
+    if not number:
         break
+    numbers1.add(number)
 
-input()
-
-list2 = set()
+print("Введите номера домов со второго листка (для завершения введите пустую строку):")
+numbers2 = set()
 while True:
-    num = input()
-    if num:
-        list2.add(num)
-    else:
+    number = input().strip()
+    if not number:
         break
+    numbers2.add(number)
 
-common_numbers = list1.intersection(list2)
+common_numbers = numbers1 & numbers2
 if common_numbers:
-    for num in common_numbers:
-        print(num)
+    print("Номера домов, которые встречаются на обоих листках:")
+    for number in common_numbers:
+        print(number)
 else:
-    print('EMPTY')
+    print("EMPTY")
